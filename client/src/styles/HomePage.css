@@ -1,0 +1,101 @@
+/* General styling for the container */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filters-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-tab {
+  margin-top: 15px;
+}
+
+/* Specific styling for small devices */
+@media (max-width: 768px) {
+  .filters,
+  .filters-second {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .switch-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .switch-icons .mx-2 {
+    margin: 0 10px;
+  }
+
+  .filter-tab {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .filters > div, .filters-second > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .custom-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table-responsive table {
+    width: 100%;
+    min-width: 500px; /* Ensure table is scrollable horizontally on small screens */
+  }
+}
+
+/* Extra small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+  .creative-heading {
+    font-size: 20px;
+  }
+
+  .filters,
+  .filters-second {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-tab {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .scrollable-content-horizontal {
+    gap: 10px;
+  }
+
+  .benefit-card {
+    min-width: 200px;
+  }
+}

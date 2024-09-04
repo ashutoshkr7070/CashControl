@@ -1,0 +1,84 @@
+/* Sleek, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.custom-navbar {
+  font-family: 'Roboto', sans-serif; /* Apply modern font */
+  background: #F0F0F0; /* Transparent background */
+
+  backdrop-filter: blur(10px); /* Slight blur for transparency effect */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); Subtle border for definition */
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+/* .custom{
+  padding: 10px 20px;
+} */
+
+/* Navbar Brand Logo */
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-logo {
+  width: 30px;
+  color: #dc3545;
+  transition: transform 0.1s ease;
+  /* margin: 5px; */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+  color: #b71c1c;
+}
+
+/* User Name Styling */
+.user-name {
+  color: #dc3545;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.user-name:hover {
+  color: #b71c1c; /* Change color on hover */
+}
+
+/* Logout Button */
+.logout-btn {
+  background: transparent;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(220, 53, 69, 0.1); /* Light red background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.logout-icon {
+  color: #dc3545; /* Red color for the logout icon */
+  transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+  color: #b71c1c; /* Darker red on hover */
+}
+
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-link {
+  color: #dc3545;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b71c1c; /* Change color on hover */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .custom-navbar {
+    background: rgba(206, 200, 200, 0.95); /* Slightly less transparent on mobile */
+  }
+}

@@ -1,0 +1,102 @@
+/* RegisterPage.css */
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+}
+.brand-title {
+  color: #dc3545;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.brand-title:hover{
+  color: #b71c1c;
+}
+
+.register-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-field {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.toggle-password-icon {
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.form-footer {
+  margin-top: 20px;
+}
+
+.login-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #b71c1c;
+}
+
+.register-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.register-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Spinner for loading state */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #dc3545;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+}

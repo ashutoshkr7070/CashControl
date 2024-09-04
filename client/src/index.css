@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.custom-button{  
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+.custom-button:hover {
+  background-color: #d32535; /* Light red background on hover */
+  transform: scale(1.02);
+  color: #fff;
+}
+
+.content{
+  margin-top: 5px;
+  height: 100%;
+  width: 90vw;
+  margin: auto;
+}
+
+/* .navbar{
+  background-color: rgb(79, 79, 166) !important;
+} */
+
+
+
+/* transection page */
+.filters {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.filters-second{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+/* ant icons */
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon{
+  color: #dc3545;
+}
+.inactive-icon{
+  color: rgba(128, 128, 128, 0.825);
+}
+.inactive-icon:hover {
+  color: #b71c1c; /* Darker red on hover */
+  transition: color 0.3s ease;
+}
+
+
+
+.switch-icons {
+  border: 1px solid rgba(0, 0, 0, 0.232);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.filter-tab, .ant-select-selector {
+  width: 150px !important;
+}
